@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section className="h-screen snap-start bg-blue-900">
       <Container>
-        <article className="h-screen flex justify-center items-center">
+        <article className="h-screen flex justify-center items-center text-white">
           <div className="px-1">
             <h1 className="font-bold text-3xl mb-4">
               Olá, me chamo Matheus Ned
