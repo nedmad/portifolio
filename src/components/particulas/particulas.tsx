@@ -71,7 +71,7 @@ const Particulas = () => {
           color: "#8A2BE2",
           distance: 150,
           enable: true,
-          opacity: 1,
+          opacity: 0.5,
           width: 1,
         },
         move: {
@@ -88,7 +88,7 @@ const Particulas = () => {
           density: {
             enable: true,
           },
-          value: 170,
+          value: 140,
         },
         opacity: {
           value: 0.5,
@@ -97,7 +97,7 @@ const Particulas = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 3 },
         },
       },
       detectRetina: true,

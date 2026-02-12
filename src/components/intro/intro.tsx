@@ -39,9 +39,9 @@ export default function Intro() {
   }, []);
   return (
     <>
-      <section className="h-screen snap-start">
+      <section className="h-screen   snap-start">
         <Container>
-          <article className="w-full h-screen flex justify-center items-center text-white">
+          <article className="w-full h-screen  flex justify-center md:items-center max-md:pt-30   text-white">
             <div className="px-1 w-full min-h-80 ">
               <h1 className="font-bold text-3xl mb-4 ">
                 <motion.span
