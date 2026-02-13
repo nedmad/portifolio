@@ -38,7 +38,7 @@ const Particulas = () => {
     () => ({
       background: {
         color: {
-          value: "",
+          value: "#000000",
         },
       },
       fpsLimit: 120,
@@ -72,7 +72,7 @@ const Particulas = () => {
           distance: 150,
           enable: true,
           opacity: 0.5,
-          width: 1,
+          width: 3,
         },
         move: {
           direction: MoveDirection.none,
@@ -88,10 +88,10 @@ const Particulas = () => {
           density: {
             enable: true,
           },
-          value: 140,
+          value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: 1,
         },
         shape: {
           type: "circle",
