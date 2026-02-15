@@ -99,19 +99,22 @@ export default function CenterCarousel() {
         </div>
 
         {/* BOTÕES */}
-        <button
-          onClick={prev}
-          className="absolute left-6 z-50 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition"
-        >
-          ◀
-        </button>
-
-        <button
-          onClick={next}
-          className="absolute z-50 right-6 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition "
-        >
-          ▶
-        </button>
+        {slides.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              className="absolute left-6 z-50 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition"
+            >
+              ◀
+            </button>
+            <button
+              onClick={next}
+              className="absolute z-50 right-6 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition "
+            >
+              ▶
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
