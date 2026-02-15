@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import Container from "../container/container";
 import { motion } from "motion/react";
-
+import { SiGithub } from "react-icons/si";
+import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Intro() {
   const text = `
               Sou desenvolvedor Full Stack com foco em Front-end
@@ -41,8 +42,8 @@ export default function Intro() {
     <>
       <section className="h-screen   snap-start">
         <Container>
-          <article className="w-full h-screen  flex justify-center md:items-center max-md:pt-30   text-white">
-            <div className="px-1 w-full min-h-80 ">
+          <article className="w-full h-screen  flex flex-col justify-start pt-20     text-white">
+            <div className="px-1 w-full min-h-80 max-md:min-h-96 mb-3">
               <h1 className="font-bold text-3xl mb-4 ">
                 <motion.span
                   initial={{ y: -20, opacity: 0 }}
@@ -62,6 +63,34 @@ export default function Intro() {
                   {showCursor ? "|" : " "}
                 </span>
               </p>
+            </div>
+            <div className="mt-3">
+              <div className="flex gap-5">
+                <a className="hover:text-purple-700  transition duration-300v cursor-pointer">
+                  <SiGithub size={50} />
+                </a>
+                <animateTransform className="hover:text-purple-700 transition duration-300 cursor-pointer">
+                  {" "}
+                  <FaLinkedin size={50} />
+                </animateTransform>
+                <a className="hover:text-purple-700 transition duration-300 cursor-pointer">
+                  {" "}
+                  <FaWhatsapp size={50} />
+                </a>
+                <a className="hover:text-purple-700 transition duration-300 cursor-pointer">
+                  {" "}
+                  <FaEnvelope size={50} />
+                </a>
+              </div>
+              <div>
+                <a
+                  href=""
+                  target="_blank"
+                  className="inline-block bg-purple-700 px-12 py-3 rounded mt-6 font-bold hover:scale-110 hover:shadow-[0_0_25px_rgb(124,58,237)]   transition-all duration-300"
+                >
+                  Baixar CV
+                </a>
+              </div>
             </div>
           </article>
         </Container>

@@ -41,11 +41,11 @@ export default function CenterCarousel() {
   };
 
   return (
-    <div className="h-screen snap-start flex justify-center items-center flex-col">
-      <h1 className="text-5xl max-md:mb-10 max-md:text-4xl underline decoration-purple-500">
+    <div className="h-screen snap-start flex justify-center items-center flex-col pt-5 px-1">
+      <h1 className="text-5xl mt-10 max-md:text-4xl underline decoration-purple-700">
         Projetos
       </h1>
-      <div className=" relative  w-full h-full max-h-3/4 flex items-center justify-center overflow-hidden">
+      <div className=" relative  w-full h-full  flex items-center justify-center overflow-hidden">
         <div className="relative w-full flex items-center justify-center">
           {slides.map((slide, index) => {
             const offset = index - current;
@@ -66,7 +66,7 @@ export default function CenterCarousel() {
                 }}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 7px 10px rgba(168, 85, 247)",
+                  boxShadow: "0px 7px 10px rgb(124, 58, 237)",
                 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{
