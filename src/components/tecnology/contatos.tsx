@@ -62,7 +62,7 @@ export default function Tecnology() {
 
   return (
     <Container>
-      <section className="w-full snap-start text-white py-20 space-y-10">
+      <section className="w-full relative snap-start text-white py-20 space-y-10">
         {/* ================= FRONT-END ================= */}
 
         <div className="space-y-8 flex flex-col items-center ">
