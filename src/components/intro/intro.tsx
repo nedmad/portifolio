@@ -66,25 +66,37 @@ export default function Intro() {
             </div>
             <div className="mt-3">
               <div className="flex gap-5">
-                <a className="hover:text-purple-700  transition duration-300v cursor-pointer">
+                <a
+                  href="https://github.com/nedmad"
+                  target="_blank"
+                  className="hover:text-purple-700  transition duration-300v cursor-pointer"
+                >
                   <SiGithub size={50} />
                 </a>
-                <animateTransform className="hover:text-purple-700 transition duration-300 cursor-pointer">
-                  {" "}
+                <a
+                  href="https://www.linkedin.com/in/matheus-ned-barros-labre-422564237/"
+                  target="_blank"
+                  className="hover:text-purple-700 transition duration-300 cursor-pointer"
+                >
                   <FaLinkedin size={50} />
-                </animateTransform>
-                <a className="hover:text-purple-700 transition duration-300 cursor-pointer">
-                  {" "}
+                </a>
+                <a
+                  href="https://wa.me/556499759986"
+                  target="_blank"
+                  className="hover:text-purple-700 transition duration-300 cursor-pointer"
+                >
                   <FaWhatsapp size={50} />
                 </a>
-                <a className="hover:text-purple-700 transition duration-300 cursor-pointer">
-                  {" "}
+                <a
+                  href="mailto:matheusned117@gmail.com?subject=Contato&body=Olá%20vim%20pelo%20site"
+                  className="hover:text-purple-700 transition duration-300 cursor-pointer"
+                >
                   <FaEnvelope size={50} />
                 </a>
               </div>
               <div>
                 <a
-                  href=""
+                  href="/arquivos/Currículo Simples com Foto e Informações em Rosa e Branco-3.pdf"
                   target="_blank"
                   className="inline-block bg-purple-700 px-12 py-3 rounded mt-6 font-bold hover:scale-110 hover:shadow-[0_0_25px_rgb(124,58,237)]   transition-all duration-300"
                 >

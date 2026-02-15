@@ -14,7 +14,9 @@ const slides: Slide[] = [
   {
     id: 1,
     title: "Projeto Full Stack",
-    description: "Next + Laravel + API externa",
+    description: `dffdsfdsfsdfsfsdfds
+    dffdsfdsfsdfsfsdfds
+    `,
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
   },
 ];
