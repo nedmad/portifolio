@@ -44,7 +44,7 @@ export default function Header() {
       </nav>
       <div className="w-full flex justify-end min-md:hidden bg-black">
         <HiOutlineMenu
-          className="opacity-100 hover:text-purple-800  transition duration-300"
+          className="opacity-100 hover:text-purple-800  transition duration-300 text-white"
           size={48}
         />
       </div>
