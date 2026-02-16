@@ -4,7 +4,7 @@ import Tecnology from "@/components/tecnology/contatos";
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
+    <main className="h-screen overflow-y-scroll ">
       <Intro />
       <Projetos />
       <Tecnology />

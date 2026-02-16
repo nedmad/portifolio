@@ -40,7 +40,7 @@ export default function Intro() {
   }, []);
   return (
     <>
-      <section className="h-screen   snap-start">
+      <section className="h-screen  ">
         <Container>
           <article className="w-full h-screen  flex flex-col justify-start pt-20     text-white">
             <div className="px-1 w-full min-h-80 max-md:min-h-96 mb-3">

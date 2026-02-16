@@ -62,7 +62,7 @@ export default function Tecnology() {
 
   return (
     <Container>
-      <section className="w-full relative snap-start text-white py-20 space-y-10">
+      <section className="w-full relative  text-white py-20 space-y-10">
         {/* ================= FRONT-END ================= */}
 
         <div className="space-y-8 flex flex-col items-center ">
@@ -77,7 +77,7 @@ export default function Tecnology() {
             </p>
           </div>
 
-          <div className="relative overflow-hidden max-w-3xl">
+          <div className="relative overflow-hidden w-full max-w-3xl">
             <motion.div
               ref={frontRef}
               className="flex gap-16 w-max"
@@ -118,7 +118,7 @@ export default function Tecnology() {
             </p>
           </div>
 
-          <div className="relative overflow-hidden max-w-3xl">
+          <div className="relative overflow-hidden w-full max-w-3xl">
             <motion.div
               ref={backRef}
               className="flex gap-16 w-max"
