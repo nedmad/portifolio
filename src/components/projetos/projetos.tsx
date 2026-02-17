@@ -124,13 +124,13 @@ export default function CenterCarousel() {
           <>
             <button
               onClick={prev}
-              className="absolute left-6 z-50 bg-white/40 hover:bg-white/80 text-black px-6 py-5 rounded-full transition"
+              className="absolute left-6 z-50 bg-white/40 hover:bg-white/80 text-black  max-md:bg-black/40  max-md:text-white max-md:hover:bg-black/80 px-6 py-5 rounded-full transition"
             >
               ◀
             </button>
             <button
               onClick={next}
-              className="absolute z-50 right-6 bg-white/40 hover:bg-white/80 text-black px-6 py-5 rounded-full transition "
+              className="absolute z-50 right-6 bg-white/40 hover:bg-white/80 text-black  max-md:bg-black/40 max-md:text-white max-md:hover:bg-black/80 px-6 py-5 rounded-full transition "
             >
               ▶
             </button>
