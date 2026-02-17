@@ -11,6 +11,9 @@ export default function Header() {
   function handleHiden() {
     setClickBurguer((opac) => !opac);
   }
+  function handleHidenLink() {
+    setClickBurguer(false);
+  }
 
   useEffect(() => {
     function handlescrolly() {
@@ -57,21 +60,21 @@ export default function Header() {
         >
           <a
             href="#contatos"
-            onClick={handleHiden}
+            onClick={handleHidenLink}
             className="inline-block px-3 py-2 hover:bg-purple-800 bg-purple-600 rounded transition duration-300"
           >
             Contatos
           </a>
           <a
             href="#projetos"
-            onClick={handleHiden}
+            onClick={handleHidenLink}
             className="inline-block px-3 py-2 hover:bg-purple-800 bg-purple-600 rounded transition duration-300"
           >
             Projetos
           </a>
           <a
             href="#infos"
-            onClick={handleHiden}
+            onClick={handleHidenLink}
             className="inline-block px-3 py-2 hover:bg-purple-800 bg-purple-600 rounded transition duration-300"
           >
             Mais informações

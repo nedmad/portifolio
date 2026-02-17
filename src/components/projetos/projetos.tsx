@@ -8,16 +8,23 @@ type Slide = {
   title: string;
   description: string;
   image: string;
+  link: string;
 };
 
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Projeto Full Stack",
-    description: `dffdsfdsfsdfsfsdfds
-    dffdsfdsfsdfsfsdfds
-    `,
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    title: "DalyGames",
+    description: `Aplicação desenvolvida com Next.js e TypeScript, que consome uma API REST para listar jogos dinamicamente. Possui rotas individuais para cada jogo e um sistema de busca por nome, permitindo consultas rápidas e navegação intuitiva`,
+    image: "/dalygames.png",
+    link: "https://games-pi-seven.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "DalyGames",
+    description: `Site exclusivo desenvolvido com Next.js e TypeScript, com integração a um CMS, permitindo a edição de imagens, informações e contatos sem necessidade de alterar o código. O usuário pode gerenciar todo o conteúdo de forma prática e intuitiva.`,
+    image: "/devmotors.png",
+    link: "https://devmotors-yh4y.vercel.app/",
   },
 ];
 
@@ -66,7 +73,7 @@ export default function CenterCarousel() {
                 animate={{
                   x: offset * 320,
                   scale: isActive ? 1 : 0.85,
-                  opacity: Math.abs(offset) > 1 ? 0 : 0.6,
+                  opacity: Math.abs(offset) > 1 ? 0 : 1,
                   zIndex: isActive ? 10 : 1,
                 }}
                 whileHover={{
@@ -80,7 +87,7 @@ export default function CenterCarousel() {
                   damping: 20,
                 }}
               >
-                <a href="https://google.com">
+                <a href={slide.link} target="_blank">
                   <img
                     src={slide.image}
                     className="w-full h-full object-cover "
@@ -92,10 +99,10 @@ export default function CenterCarousel() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="absolute bottom-0 left-0 right-0 bg-black/60 p-6 text-white"
+                    className="absolute bottom-0 left-0 right-0 bg-black/80 p-6 text-white"
                   >
                     <h2 className="text-2xl font-bold">{slide.title}</h2>
-                    <p>{slide.description}</p>
+                    <p className="font-bold">{slide.description}</p>
                   </motion.div>
                 )}
               </motion.div>
