@@ -54,7 +54,7 @@ export default function CenterCarousel() {
       id="projetos"
       className="h-screen  flex justify-center items-center flex-col pt-5 px-1"
     >
-      <h1 className="text-5xl text-white font-bold mt-10 max-md:text-4xl underline decoration-purple-700">
+      <h1 className="text-5xl text-white font mt-10 max-md:text-4xl underline decoration-purple-700">
         Projetos
       </h1>
       <div className=" relative  w-full h-full  flex items-center justify-center overflow-hidden">
@@ -124,13 +124,13 @@ export default function CenterCarousel() {
           <>
             <button
               onClick={prev}
-              className="absolute left-6 z-50 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition"
+              className="absolute left-6 z-50 bg-white/40 hover:bg-white/80 text-black px-6 py-5 rounded-full transition"
             >
               ◀
             </button>
             <button
               onClick={next}
-              className="absolute z-50 right-6 bg-black/40 hover:bg-black/70 text-white px-6 py-5 rounded-full transition "
+              className="absolute z-50 right-6 bg-white/40 hover:bg-white/80 text-black px-6 py-5 rounded-full transition "
             >
               ▶
             </button>
