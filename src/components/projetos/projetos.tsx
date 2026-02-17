@@ -54,7 +54,7 @@ export default function CenterCarousel() {
       id="projetos"
       className="h-screen  flex justify-center items-center flex-col pt-5 px-1"
     >
-      <h1 className="text-5xl text-white mt-10 max-md:text-4xl underline decoration-purple-700">
+      <h1 className="text-5xl text-white font-bold mt-10 max-md:text-4xl underline decoration-purple-700">
         Projetos
       </h1>
       <div className=" relative  w-full h-full  flex items-center justify-center overflow-hidden">
