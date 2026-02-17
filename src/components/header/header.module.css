@@ -1,9 +1,10 @@
 
 
 .navOpen{
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: initial;
     align-items: center;
     gap: 12px;
     height: 100%;
