@@ -21,10 +21,10 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    title: "DalyGames",
+    title: "Dev Motors",
     description: `Site exclusivo desenvolvido com Next.js e TypeScript, com integração a um CMS, permitindo a edição de imagens, informações e contatos sem necessidade de alterar o código. O usuário pode gerenciar todo o conteúdo de forma prática e intuitiva.`,
     image: "/devmotors.png",
-    link: "https://devmotors-yh4y.vercel.app/",
+    link: "https://devmotors-ecru.vercel.app/",
   },
 ];
 
