@@ -66,10 +66,19 @@ export default function CenterCarousel() {
             return (
               <motion.div
                 key={slide.id}
-                className="absolute w-[100%] max-w-md h-[550px] rounded-xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing "
-                drag={isActive ? "x" : false}
+                className="absolute w-[100%] max-w-md h-[550px] rounded-xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing"
+                drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={0.2}
+                onDragEnd={(event, info) => {
+                  const threshold = 100; // distância mínima para trocar
+
+                  if (info.offset.x < -threshold) {
+                    next();
+                  } else if (info.offset.x > threshold) {
+                    prev();
+                  }
+                }}
                 animate={{
                   x: offset * 320,
                   scale: isActive ? 1 : 0.85,
