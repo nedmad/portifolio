@@ -73,9 +73,9 @@ export default function CenterCarousel() {
                 onDragEnd={(event, info) => {
                   const threshold = 100; // distância mínima para trocar
 
-                  if (info.offset.x < -threshold) {
+                  if (info.velocity.x < -500) {
                     next();
-                  } else if (info.offset.x > threshold) {
+                  } else if (info.velocity.x > 500) {
                     prev();
                   }
                 }}
