@@ -24,7 +24,12 @@ export const metadata: Metadata = {
       "Projetos modernos desenvolvidos com React, Next.js, TypeScript e Firebase.",
     url: "https://matheusned.com.br",
     siteName: "Matheus Ned",
-    images: ["/matheus.png"],
+    images: {
+      url: "https://matheusned.com.br/matheus.png",
+      width: 1200,
+      height: 630,
+      alt: "Matheus Ned - Portfólio",
+    },
     locale: "pt_BR",
     type: "website",
   },
