@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Matheus Ned",
     images: [
       {
-        url: "/matheus",
+        url: "/matheus.png",
         width: 1200,
         height: 630,
         alt: "Portfólio Matheus Ned - React, Next.js, TypeScript e Firebase",
