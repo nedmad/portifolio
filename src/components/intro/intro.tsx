@@ -96,7 +96,7 @@ export default function Intro() {
               </div>
               <div>
                 <a
-                  href="/arquivos/Currículo Simples com Foto e Informações em Rosa e Branco-3.pdf"
+                  href="/arquivos/curriculo-Matheus-Ned.pdf"
                   target="_blank"
                   className="inline-block bg-purple-700 px-12 py-3 rounded mt-6 font-bold hover:scale-110 hover:shadow-[0_0_25px_rgb(124,58,237)]   transition-all duration-300"
                 >
